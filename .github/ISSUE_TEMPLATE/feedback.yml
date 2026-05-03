@@ -1,17 +1,17 @@
 name: Feedback / Suggestion
-description: Une idée, une critique constructive, un retour sur l'expérience
+description: An idea, constructive criticism, or general feedback on the experience
 labels: ["feedback"]
 body:
   - type: markdown
     attributes:
       value: |
-        Merci pour ton retour ! / Thanks for your feedback.
+        Thanks for your feedback.
 
   - type: textarea
     id: feedback
     attributes:
-      label: Ton retour / Your feedback
-      placeholder: ex. "J'aimerais pouvoir filtrer les achievements par catégorie"
+      label: Your feedback
+      placeholder: e.g. "I'd like to filter achievements by category"
     validations:
       required: true
 
@@ -20,17 +20,17 @@ body:
     attributes:
       label: Type
       options:
-        - Suggestion (nouvelle idée)
-        - Amélioration (sur une fonctionnalité existante)
-        - Critique UX (quelque chose qui m'a frustré)
-        - Compliment (tu peux aussi !)
+        - Suggestion (new idea)
+        - Improvement (on an existing feature)
+        - UX criticism (something that frustrated me)
+        - Compliment (those are welcome too!)
     validations:
       required: false
 
   - type: textarea
     id: context
     attributes:
-      label: Contexte
-      description: Optionnel — où dans l'app, ou pour quel cas d'usage ?
+      label: Context
+      description: Optional — where in the app, or for what use case?
     validations:
       required: false

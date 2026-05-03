@@ -5,25 +5,25 @@ body:
   - type: markdown
     attributes:
       value: |
-        Merci de prendre le temps de remonter un bug ! / Thanks for taking the time to file a bug report.
+        Thanks for taking the time to file a bug report.
 
   - type: textarea
     id: what-happened
     attributes:
-      label: Que se passe-t-il ? / What's happening?
-      description: Décris le problème en quelques lignes.
-      placeholder: ex. "Quand je tape sur Quiz du jour, l'écran reste blanc"
+      label: What's happening?
+      description: Describe the problem in a few lines.
+      placeholder: e.g. "When I tap Daily quiz the screen stays blank"
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Comment reproduire / Steps to reproduce
+      label: Steps to reproduce
       placeholder: |
-        1. Ouvre l'app
-        2. Va sur l'onglet Quiz
-        3. Tap sur Quiz du jour
+        1. Open the app
+        2. Go to the Quiz tab
+        3. Tap Daily quiz
         4. ...
     validations:
       required: false
@@ -31,24 +31,24 @@ body:
   - type: input
     id: device
     attributes:
-      label: Appareil / Device
-      placeholder: ex. iPhone 13 Pro Max, iOS 18.1
+      label: Device
+      placeholder: e.g. iPhone 13 Pro Max, iOS 18.1
     validations:
       required: false
 
   - type: input
     id: app-version
     attributes:
-      label: Version de l'app / App version
-      description: Visible dans Réglages tout en bas
-      placeholder: ex. 1.0.0
+      label: App version
+      description: Visible at the bottom of the in-app Settings screen.
+      placeholder: e.g. 1.0.0
     validations:
       required: false
 
   - type: textarea
     id: screenshot
     attributes:
-      label: Capture d'écran / Screenshot
-      description: Glisse-dépose une image si tu en as une
+      label: Screenshot
+      description: Drag and drop an image if you have one.
     validations:
       required: false
