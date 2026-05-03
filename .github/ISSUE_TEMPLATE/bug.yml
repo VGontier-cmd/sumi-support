@@ -1,0 +1,54 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de remonter un bug ! / Thanks for taking the time to file a bug report.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Que se passe-t-il ? / What's happening?
+      description: Décris le problème en quelques lignes.
+      placeholder: ex. "Quand je tape sur Quiz du jour, l'écran reste blanc"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Comment reproduire / Steps to reproduce
+      placeholder: |
+        1. Ouvre l'app
+        2. Va sur l'onglet Quiz
+        3. Tap sur Quiz du jour
+        4. ...
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: Appareil / Device
+      placeholder: ex. iPhone 13 Pro Max, iOS 18.1
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Version de l'app / App version
+      description: Visible dans Réglages tout en bas
+      placeholder: ex. 1.0.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Capture d'écran / Screenshot
+      description: Glisse-dépose une image si tu en as une
+    validations:
+      required: false
